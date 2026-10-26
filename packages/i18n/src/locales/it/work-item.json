@@ -1,0 +1,432 @@
+{
+  "issue": {
+    "label": "{count, plural, one {Task} other {Task}}",
+    "all": "Tutte le task",
+    "edit": "Modifica task",
+    "title": {
+      "label": "Titolo della task",
+      "required": "Il titolo della task è obbligatorio."
+    },
+    "add": {
+      "press_enter": "Premi 'Invio' per aggiungere un altro task",
+      "label": "Aggiungi task",
+      "cycle": {
+        "failed": "Impossibile aggiungere la task al ciclo. Per favore, riprova.",
+        "success": "{count, plural, one {Task} other {Task}} aggiunto al ciclo con successo.",
+        "loading": "Aggiungendo {count, plural, one {task} other {task}} al ciclo"
+      },
+      "assignee": "Assegna",
+      "start_date": "Aggiungi data di inizio",
+      "due_date": "Aggiungi consegna",
+      "parent": "Aggiungi task principale",
+      "sub_issue": "Aggiungi sotto-task",
+      "dependency": "Aggiungi dipendenza",
+      "relation": "Aggiungi relazione",
+      "link": "Aggiungi link",
+      "existing": "Aggiungi task esistente"
+    },
+    "remove": {
+      "label": "Rimuovi task",
+      "cycle": {
+        "loading": "Rimuovendo la task dal ciclo",
+        "success": "Task rimossa dal ciclo con successo.",
+        "failed": "Impossibile rimuovere la task dal ciclo. Per favore, riprova."
+      },
+      "module": {
+        "loading": "Rimuovendo la task dalla sezione",
+        "success": "Task rimossa dalla sezione con successo.",
+        "failed": "Impossibile rimuovere la task dalla sezione. Per favore, riprova."
+      },
+      "parent": {
+        "label": "Rimuovi task principale"
+      }
+    },
+    "new": "Nuova task",
+    "adding": "Aggiunta della task in corso",
+    "create": {
+      "success": "Task creata con successo"
+    },
+    "priority": {
+      "urgent": "Urgente (1 gg)",
+      "high": "Prioritario (3 gg)",
+      "medium": "Standard (7 gg)",
+      "low": "In blocco (10 gg)"
+    },
+    "display": {
+      "properties": {
+        "label": "Visualizza proprietà",
+        "id": "ID",
+        "issue_type": "Tipo di task",
+        "sub_issue_count": "Numero di sotto-task",
+        "attachment_count": "Numero di allegati",
+        "created_on": "Creato il",
+        "sub_issue": "Sotto-task",
+        "work_item_count": "Conteggio delle task"
+      },
+      "extra": {
+        "show_sub_issues": "Mostra sotto-task",
+        "show_empty_groups": "Mostra gruppi vuoti"
+      }
+    },
+    "layouts": {
+      "ordered_by_label": "Questo layout è ordinato per",
+      "list": "Lista",
+      "kanban": "Schede",
+      "calendar": "Calendario",
+      "spreadsheet": "Tabella",
+      "gantt": "Timeline",
+      "title": {
+        "list": "Layout a lista",
+        "kanban": "Layout a schede",
+        "calendar": "Layout a calendario",
+        "spreadsheet": "Layout a tabella",
+        "gantt": "Layout a timeline"
+      }
+    },
+    "states": {
+      "active": "Attivo",
+      "backlog": "Da pianificare"
+    },
+    "comments": {
+      "placeholder": "Aggiungi commento",
+      "switch": {
+        "private": "Passa a commento privato",
+        "public": "Passa a commento pubblico"
+      },
+      "create": {
+        "success": "Commento creato con successo",
+        "error": "Creazione del commento fallita. Per favore, riprova più tardi."
+      },
+      "update": {
+        "success": "Commento aggiornato con successo",
+        "error": "Aggiornamento del commento fallito. Per favore, riprova più tardi."
+      },
+      "remove": {
+        "success": "Commento rimosso con successo",
+        "error": "Rimozione del commento fallita. Per favore, riprova più tardi."
+      },
+      "upload": {
+        "error": "Caricamento dell'asset fallito. Per favore, riprova più tardi."
+      },
+      "copy_link": {
+        "success": "Link del commento copiato negli appunti",
+        "error": "Errore durante la copia del link del commento. Riprova più tardi."
+      },
+      "replies": {
+        "create": {
+          "submit_button": "Aggiungi risposta",
+          "placeholder": "Aggiungi risposta"
+        },
+        "toast": {
+          "fetch": {
+            "error": {
+              "message": "Impossibile recuperare le risposte"
+            }
+          },
+          "create": {
+            "success": {
+              "message": "Risposta creata con successo"
+            },
+            "error": {
+              "message": "Impossibile creare la risposta"
+            }
+          },
+          "update": {
+            "success": {
+              "message": "Risposta aggiornata con successo"
+            },
+            "error": {
+              "message": "Impossibile aggiornare la risposta"
+            }
+          },
+          "delete": {
+            "success": {
+              "message": "Risposta eliminata con successo"
+            },
+            "error": {
+              "message": "Impossibile eliminare la risposta"
+            }
+          }
+        }
+      }
+    },
+    "empty_state": {
+      "issue_detail": {
+        "title": "La task non esiste",
+        "description": "La task che stai cercando non esiste, è stato archiviato o eliminato.",
+        "primary_button": {
+          "text": "Visualizza altri task"
+        }
+      }
+    },
+    "sibling": {
+      "label": "Task correlati"
+    },
+    "archive": {
+      "description": "Solo le task completate o annullati possono essere archiviati",
+      "label": "Archivia task",
+      "confirm_message": "Sei sicuro di voler archiviare la task? Tutte le task archiviate possono essere ripristinati in seguito.",
+      "success": {
+        "label": "Archiviazione riuscita",
+        "message": "I tuoi archivi sono disponibili negli archivi del progetto."
+      },
+      "failed": {
+        "message": "Impossibile archiviare la task. Per favore, riprova."
+      },
+      "banner_message": "Questa task è stata archiviata. Vai alla sezione Archivi per ripristinarlo.",
+      "go_to_archives": "Vai agli archivi"
+    },
+    "restore": {
+      "success": {
+        "title": "Ripristino riuscito",
+        "message": "La tua task è disponibile negli elementi del progetto."
+      },
+      "failed": {
+        "message": "Impossibile ripristinare la task. Per favore, riprova."
+      }
+    },
+    "relation": {
+      "relates_to": "Collegato a",
+      "duplicate": "Duplicato di",
+      "blocked_by": "Bloccato da",
+      "blocking": "Blocca",
+      "start_before": "Inizia prima",
+      "start_after": "Inizia dopo",
+      "finish_before": "Finisce prima",
+      "finish_after": "Finisce dopo",
+      "implements": "Implementa",
+      "implemented_by": "Implementato da"
+    },
+    "copy_link": "Copia link della task",
+    "delete": {
+      "label": "Elimina task",
+      "error": "Errore nell'eliminazione della task"
+    },
+    "subscription": {
+      "actions": {
+        "subscribed": "Iscrizione alla task avvenuta con successo",
+        "unsubscribed": "Disiscrizione dalla task avvenuta con successo"
+      }
+    },
+    "select": {
+      "error": "Seleziona almeno una task",
+      "empty": "Nessuna task selezionata",
+      "add_selected": "Aggiungi le task selezionate",
+      "select_all": "Seleziona tutto",
+      "deselect_all": "Deseleziona tutto"
+    },
+    "open_in_full_screen": "Apri la task a schermo intero",
+    "duplicate": {
+      "modal": {
+        "title": "Crea una copia in un altro progetto",
+        "description1": "Questo crea una copia della task.",
+        "description2": "Tutti i dati delle proprietà verranno rimossi durante la duplicazione.",
+        "placeholder": "Seleziona un progetto"
+      }
+    },
+    "toast": {
+      "duplicate": {
+        "success": {
+          "message": "Task duplicata con successo"
+        },
+        "error": {
+          "message": "Impossibile duplicare la task"
+        }
+      }
+    },
+    "pages": {
+      "link_pages": "Collega pagine",
+      "show_wiki_pages": "Mostra pagine Wiki",
+      "link_pages_to": "Collega pagine a",
+      "linked_pages": "Pagine collegate",
+      "no_description": "Questa è una pagina vuota. Perché non scrivi qualcosa all'interno e vedilo apparire qui come questo segnaposto",
+      "toasts": {
+        "link": {
+          "success": {
+            "title": "Pagine aggiornate",
+            "message": "Pagine aggiornate con successo"
+          },
+          "error": {
+            "title": "Aggiornamento pagine fallito",
+            "message": "Aggiornamento pagine fallito"
+          }
+        },
+        "remove": {
+          "success": {
+            "title": "Pagina rimossa",
+            "message": "Pagina rimossa con successo"
+          },
+          "error": {
+            "title": "Rimozione pagina fallita",
+            "message": "Rimozione pagina fallita"
+          }
+        }
+      }
+    },
+    "vote": {
+      "click_to_upvote": "Clicca per votare a favore",
+      "click_to_downvote": "Clicca per votare contro",
+      "click_to_view_upvotes": "Clicca per vedere i voti a favore",
+      "click_to_view_downvotes": "Clicca per vedere i voti contro"
+    }
+  },
+  "sub_work_item": {
+    "update": {
+      "success": "Sotto-task aggiornata con successo",
+      "error": "Errore nell'aggiornamento della sotto-task"
+    },
+    "remove": {
+      "success": "Sotto-task rimossa con successo",
+      "error": "Errore nella rimozione della sotto-task"
+    },
+    "empty_state": {
+      "sub_list_filters": {
+        "title": "Non hai sotto-task che corrispondono ai filtri che hai applicato.",
+        "description": "Per vedere tutte le sotto-task, cancella tutti i filtri applicati.",
+        "action": "Cancella filtri"
+      },
+      "list_filters": {
+        "title": "Non hai task che corrispondono ai filtri che hai applicato.",
+        "description": "Per vedere tutte le task, cancella tutti i filtri applicati.",
+        "action": "Cancella filtri"
+      }
+    }
+  },
+  "issue_relation": {
+    "empty_state": {
+      "search": {
+        "title": "Nessuna task corrispondente trovato"
+      },
+      "no_issues": {
+        "title": "Nessuna task trovata"
+      }
+    }
+  },
+  "issue_comment": {
+    "empty_state": {
+      "general": {
+        "title": "Nessun commento ancora",
+        "description": "I commenti possono essere usati come spazio per discussioni e follow-up sulle task"
+      }
+    }
+  },
+  "bulk_operations": {
+    "error_details": {
+      "invalid_archive_state_group": {
+        "title": "Impossibile archiviare le task",
+        "message": "Solo le task appartenenti a gruppi di stato completati o annullati possono essere archiviati."
+      },
+      "invalid_issue_start_date": {
+        "title": "Impossibile aggiornare le task",
+        "message": "La data di inizio selezionata supera la data di scadenza per alcune task. Assicurati che la data di inizio sia precedente alla data di scadenza."
+      },
+      "invalid_issue_target_date": {
+        "title": "Impossibile aggiornare le task",
+        "message": "La data di scadenza selezionata precede la data di inizio per alcune task. Assicurati che la data di scadenza sia successiva alla data di inizio."
+      },
+      "invalid_state_transition": {
+        "title": "Impossibile aggiornare le task",
+        "message": "Il cambiamento di stato non è consentito per alcune task. Assicurati che il cambiamento di stato sia consentito."
+      }
+    },
+    "upgrade_banner": {
+      "message": "Cambia fase, urgenza e altro per più task contemporaneamente. Risparmia in media tre minuti per operazione.",
+      "cta": "Aggiorna a One"
+    }
+  },
+  "recurring_work_items": {
+    "settings": {
+      "heading": "Task ricorrenti",
+      "description": "Imposta il tuo lavoro ricorrente una volta e noi ci occupiamo delle ripetizioni. Vedrai tutto qui quando sarà il momento.",
+      "new_recurring_work_item": "Nuova task ricorrente",
+      "update_recurring_work_item": "Aggiorna task ricorrente",
+      "form": {
+        "interval": {
+          "title": "Pianificazione",
+          "start_date": {
+            "validation": {
+              "required": "La data di inizio è obbligatoria"
+            }
+          },
+          "interval_type": {
+            "validation": {
+              "required": "Il tipo di intervallo è obbligatorio"
+            }
+          }
+        },
+        "button": {
+          "create": "Crea task ricorrente",
+          "update": "Aggiorna task ricorrente"
+        }
+      },
+      "create_button": {
+        "label": "Crea task ricorrente",
+        "no_permission": "Contatta l'amministratore del progetto per creare task ricorrenti"
+      }
+    },
+    "empty_state": {
+      "upgrade": {
+        "title": "Il tuo lavoro, in automatico",
+        "description": "Impostalo una volta sola. Lo riproporremo quando sarà il momento. Passa a Business per rendere il lavoro ricorrente senza sforzo."
+      },
+      "no_templates": {
+        "button": "Crea la tua prima task ricorrente"
+      }
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "title": "Task ricorrente creato",
+          "message": "{name}, la task ricorrente, è ora disponibile nel tuo workspace."
+        },
+        "error": {
+          "title": "Non siamo riusciti a creare questa task ricorrente.",
+          "message": "Prova a salvare di nuovo i tuoi dati o copiali in una nuova task ricorrente, preferibilmente in un'altra scheda."
+        }
+      },
+      "update": {
+        "success": {
+          "title": "Task ricorrente aggiornato",
+          "message": "{name}, la task ricorrente, è stato aggiornato."
+        },
+        "error": {
+          "title": "Non siamo riusciti a salvare le modifiche a questa task ricorrente.",
+          "message": "Prova a salvare di nuovo i tuoi dati o torna più tardi su questa task ricorrente. Se il problema persiste, contattaci."
+        }
+      },
+      "delete": {
+        "success": {
+          "title": "Task ricorrente eliminato",
+          "message": "{name}, la task ricorrente, è stato eliminato dal tuo workspace."
+        },
+        "error": {
+          "title": "Non siamo riusciti a eliminare questa task ricorrente.",
+          "message": "Prova a eliminarlo di nuovo o torna più tardi. Se non riesci ancora a eliminarlo, contattaci."
+        }
+      }
+    },
+    "delete_confirmation": {
+      "title": "Elimina task ricorrente",
+      "description": {
+        "prefix": "Sei sicuro di voler eliminare la task ricorrente-",
+        "suffix": "? Tutti i dati relativi alla task ricorrente saranno rimossi definitivamente. Questa azione non può essere annullata."
+      }
+    }
+  },
+  "epic": {
+    "new": "Nuovo Epic",
+    "label": "{count, plural, one {Epic} other {Epic}}",
+    "adding": "Aggiungendo Epic",
+    "create": {
+      "success": "Epic creato con successo"
+    },
+    "add": {
+      "label": "Aggiungi Epic",
+      "press_enter": "Premi 'Invio' per aggiungere un altro Epic"
+    },
+    "title": {
+      "label": "Titolo Epic",
+      "required": "Il titolo dell'Epic è obbligatorio."
+    }
+  }
+}

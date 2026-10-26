@@ -1,0 +1,4 @@
+# Esempi nei file originali di Plane, identici a quelli pubblici nel repository di Plane: non sono segreti.
+# Li usa controllo-segreti.py --cartella (pubblica-codice.sh). Formato di Gitleaks: file:regola:riga.
+apps/admin/app/(all)/(dashboard)/authentication/gitlab/form.tsx:gitlab-oauth-app-secret:116
+deployments/aio/community/README.md:generic-api-key:79

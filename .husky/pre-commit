@@ -1,0 +1,2 @@
+# ATLANTE: controllo nostro al posto di "pnpm lint-staged": formatta come Plane e blocca ogni avviso nuovo, senza bloccare quelli già presenti in Plane
+node atlante/script/controllo-salvataggio.mjs

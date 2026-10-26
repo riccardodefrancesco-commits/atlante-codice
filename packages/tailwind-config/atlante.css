@@ -1,0 +1,28 @@
+/* Copyright (c) 2026 Zeta3. Parte di Atlante, copia modificata di Plane.
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ *
+ * Classes that Plane's component library (@makeplane/propel 0.7.3) uses but Tailwind 4.1.17, the
+ * version Plane pins, does not produce (they arrive with Tailwind 4.2): "inset-s-*" and "inset-e-*",
+ * the start and the end of the row. Without them the close X of the windows falls on the left, over
+ * the title (zeta3-progetti#30 and #31). To remove when Plane moves to a Tailwind that has them.
+ */
+
+@utility inset-s-* {
+  inset-inline-start: calc(var(--spacing) * --value(integer));
+}
+
+@utility inset-e-* {
+  inset-inline-end: calc(var(--spacing) * --value(integer));
+}
+
+/* The urgency (Plane's priority) in Asana's colors: Urgente red, Prioritario yellow, Standard orange,
+ * In blocco indigo (Rick, 22 October; design system, table 16). The label colors already change with
+ * the theme, so they are taken again on the element that carries it. */
+:root,
+[data-theme] {
+  --priority-urgent: var(--label-crimson-text);
+  --priority-high: var(--label-yellow-text);
+  --priority-medium: var(--label-orange-text);
+  --priority-low: var(--label-indigo-text);
+}

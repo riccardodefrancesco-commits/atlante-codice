@@ -1,0 +1,46 @@
+{
+  "LEGGIMI": "Problemi noti delle librerie, già valutati: non bloccano controlla-tutto. Ogni problema nuovo blocca finché non si valuta e si aggiunge qui con il perché. Si rivedono ogni lunedì (atlante/aggiornamenti.md). Tutti ereditati da Plane: nessuna libreria è stata aggiunta da Atlante.",
+  "valutati_il": "2026-10-26",
+  "problemi": [
+    {
+      "libreria": "@tiptap/core",
+      "versione": "2.27.3",
+      "dove": "interfaccia",
+      "gravita": "media",
+      "ids": ["GHSA-cp6q-959q-f8rh"],
+      "perche": "Nell'editor: un contenuto costruito apposta può aggiungere attributi pericolosi alla pagina. Oggi scrive solo il team; conterà quando scriveranno i clienti dal portale. Corretto solo nella serie 3 di Tiptap: lo deve aggiornare Plane. Condizione per aprire il portale ai clienti (deciso con Rick il 21 ottobre)."
+    },
+    {
+      "libreria": "@vitest/mocker",
+      "versione": "4.1.11",
+      "dove": "interfaccia",
+      "gravita": "media",
+      "ids": ["GHSA-qxg6-89mg-rqv8"],
+      "perche": "Valutato il 21 ottobre (uscito quel giorno). Solo nello strumento dei test (Vitest), non nel programma. Uno riguarda Windows; l'altro un server dei test raggiungibile da fuori, che noi non usiamo (i test girano con vitest run). Corretto in 4.1.12: con l'aggiornamento di Plane."
+    },
+    {
+      "libreria": "@vitest/mocker",
+      "versione": "4.1.11",
+      "dove": "interfaccia",
+      "gravita": "media",
+      "ids": ["GHSA-xp26-3454-mjgp"],
+      "perche": "Valutato il 21 ottobre (uscito quel giorno). Solo nello strumento dei test (Vitest), non nel programma. Uno riguarda Windows; l'altro un server dei test raggiungibile da fuori, che noi non usiamo (i test girano con vitest run). Corretto in 4.1.12: con l'aggiornamento di Plane."
+    },
+    {
+      "libreria": "opentelemetry-api",
+      "versione": "1.28.1",
+      "dove": "server",
+      "gravita": "media",
+      "ids": ["GHSA-xcq7-p3pf-p88h"],
+      "perche": "Usata solo dalla telemetria di Plane, spenta in Atlante e mai inviata. Corretto in 1.45.1: con l'aggiornamento di Plane."
+    },
+    {
+      "libreria": "fast-uri",
+      "versione": "3.1.8",
+      "dove": "interfaccia",
+      "gravita": "media",
+      "ids": ["GHSA-333x-w4r6-6crp", "GHSA-w74x-v6f9-j3xg", "GHSA-wjr9-j795-jxcr", "GHSA-xhq7-xmqj-769h"],
+      "perche": "Arriva con serve (servire i file in sviluppo) e con strumenti di controllo del codice: l'interfaccia costruita la serve Caddy, non serve. Corretto in 3.1.9: con l'aggiornamento di Plane."
+    }
+  ]
+}

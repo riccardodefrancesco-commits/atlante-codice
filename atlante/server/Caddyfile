@@ -1,0 +1,59 @@
+# Copyright (c) 2026 Zeta3. Parte di Atlante, copia modificata di Plane.
+# SPDX-License-Identifier: AGPL-3.0-only
+# See the LICENSE file for details.
+
+# The only door from the internet to the test server (zeta3-progetti, docs/collaudo-0.3.md, section 1):
+# HTTPS with an automatic certificate, port 80 only sends to HTTPS. Derived from apps/proxy/Caddyfile.ce.
+
+(atlante) {
+	request_body {
+		max_size {$FILE_SIZE_LIMIT}
+	}
+	reverse_proxy /live/* live:3000
+	reverse_proxy /api/* api:8000
+	reverse_proxy /auth/* api:8000
+	reverse_proxy /static/* api:8000
+	# Files go through here only with the signed links that Atlante writes: the storage has no port.
+	reverse_proxy /{$BUCKET_NAME}/* plane-minio:9000
+	reverse_proxy /{$BUCKET_NAME} plane-minio:9000
+	reverse_proxy /* web:3000
+}
+
+# No ACME email: Let's Encrypt has sent no expiry notices since 2025, and Caddy renews by itself.
+
+{$SITE_ADDRESS} {
+	# The administration of the installation is not reachable from the internet: only through the SSH tunnel.
+	@admin path /god-mode /god-mode/* /api/instances/admins* /api/instances/configurations* /api/instances/email-credentials-check* /api/instances/workspaces*
+	respond @admin 404
+	# Nobody signs up alone (Atlante refuses it too, ENABLE_SIGNUP=0); no public pages.
+	@closed path /auth/sign-up* /auth/magic-* /auth/spaces/* /spaces /spaces/*
+	respond @closed 404
+	# Requests no browser sends, which slow down libraries inherited from Plane until Plane updates them
+	# (atlante/sicurezza/librerie-note.json): a huge Accept header (Django REST framework, GHSA-33wh-fxxf-88vv),
+	# a text encoding other than UTF-8 (GHSA-3547-9m27-7rxg), a compressed request body (body-parser, GHSA-27r3-jxmh-p828).
+	@long_accept header_regexp Accept ^.{512,}
+	respond @long_accept 400
+	@odd_charset {
+		header_regexp charset Content-Type (?i)charset=
+		not header_regexp utf8 Content-Type (?i)charset="?utf-?8"?\s*(;|$)
+	}
+	respond @odd_charset 415
+	@compressed header Content-Encoding *
+	respond @compressed 415
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		X-Frame-Options SAMEORIGIN
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+	import atlante
+}
+
+# The administration panel, only on 127.0.0.1:8080 of the server (docker-compose.collaudo.yml):
+#   ssh -L 8080:127.0.0.1:8080 atlante@<server>   then   http://localhost:8080/god-mode/
+http://:8080 {
+	redir /god-mode /god-mode/ permanent
+	reverse_proxy /god-mode/* admin:3000
+	import atlante
+}

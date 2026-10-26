@@ -1,0 +1,283 @@
+{
+  "atlante": {
+    "client": {
+      "label": "Cliente",
+      "plural": "Clienti",
+      "none": "Senza cliente",
+      "select": "Scegli il cliente",
+      "search": "Cerca un cliente",
+      "new": "Nuovo cliente",
+      "not_found": "Cliente non trovato",
+      "not_found_description": "Il cliente non esiste o non fa parte di questo spazio di lavoro.",
+      "back_to_list": "Torna ai clienti",
+      "status": {
+        "active": "Attivo",
+        "archived": "Archiviato"
+      },
+      "list": {
+        "active": "Attivi",
+        "archived": "Archiviati",
+        "columns": {
+          "name": "Cliente",
+          "code": "Sigla",
+          "contact": "Referente",
+          "projects": "Progetti",
+          "open": "Task aperte",
+          "overdue": "In ritardo"
+        },
+        "empty_title": "Ancora nessun cliente",
+        "empty_description": "Ogni cliente raccoglie in una scheda i suoi progetti e le sue task. Crea il primo per iniziare.",
+        "empty_description_member": "Gli amministratori aggiungono i clienti: quando ci saranno, li troverai qui.",
+        "empty_archived": "Nessun cliente archiviato",
+        "no_results": "Nessun cliente con questo nome"
+      },
+      "form": {
+        "create_title": "Nuovo cliente",
+        "edit_title": "Modifica cliente",
+        "name": "Nome",
+        "name_placeholder": "Nome del cliente",
+        "name_required": "Il nome è obbligatorio",
+        "code": "Sigla",
+        "code_placeholder": "Per esempio ALF",
+        "code_help": "Da 1 a 12 lettere o numeri: compare sulle schede delle task",
+        "code_invalid": "Solo lettere e numeri, al massimo 12",
+        "code_required": "La sigla è obbligatoria",
+        "color": "Colore",
+        "color_invalid": "Il colore va scritto come #RRGGBB",
+        "contact": "Referente interno",
+        "contact_placeholder": "Chi segue il cliente",
+        "email": "Email",
+        "website": "Sito",
+        "notes": "Note interne",
+        "notes_help": "Solo per il team: i clienti non le vedono mai",
+        "create": "Crea cliente",
+        "creating": "Creazione...",
+        "save": "Salva",
+        "saving": "Salvataggio...",
+        "included_revisions": "Giri di revisione inclusi",
+        "included_revisions_help": "Quelli del contratto del cliente: i giri in più sono a pagamento."
+      },
+      "toast": {
+        "created": "Cliente creato",
+        "updated": "Cliente aggiornato",
+        "archived": "Cliente archiviato",
+        "restored": "Cliente ripristinato",
+        "linked": "Progetto collegato al cliente",
+        "unlinked": "Progetto scollegato dal cliente",
+        "error": "Non è andata: riprova"
+      },
+      "actions": {
+        "edit": "Modifica",
+        "archive": "Archivia",
+        "restore": "Ripristina"
+      },
+      "archive_confirm": {
+        "title": "Archiviare {name}?",
+        "description": "Progetti e task restano dove sono. Finché non lo ripristini, il cliente non si può collegare a nuovi progetti e non compare tra le scelte.",
+        "confirm": "Archivia",
+        "confirming": "Archiviazione..."
+      },
+      "tabs": {
+        "overview": "Panoramica",
+        "projects": "Progetti",
+        "issues": "Task"
+      },
+      "overview": {
+        "details": "Dati del cliente",
+        "notes": "Note interne",
+        "no_notes": "Nessuna nota",
+        "no_contact": "Nessun referente",
+        "work": "Task",
+        "to_do": "Da fare",
+        "in_progress": "In corso",
+        "done": "Fatto",
+        "overdue": "In ritardo"
+      },
+      "projects": {
+        "link": "Collega un progetto",
+        "link_placeholder": "Scegli un progetto senza cliente",
+        "create": "Crea un progetto per questo cliente",
+        "unlink": "Scollega",
+        "empty": "Nessun progetto collegato a questo cliente",
+        "progress": "{done} di {total} completati",
+        "open_issues": "{count} aperti",
+        "overdue_issues": "{count} in ritardo",
+        "archived": "Archiviato",
+        "no_free_projects": "Tutti i progetti hanno già un cliente"
+      },
+      "issues": {
+        "empty": "Nessuna task per questo cliente",
+        "truncated": "Mostrate le prime {shown} task su {total}",
+        "due": "Scadenza",
+        "project": "Progetto",
+        "state": "Fase",
+        "groups": {
+          "backlog": "Da pianificare",
+          "unstarted": "Da fare",
+          "started": "In corso",
+          "completed": "Fatto",
+          "cancelled": "Annullato"
+        }
+      },
+      "command": {
+        "open_clients": "Vai a Clienti"
+      },
+      "no_access_title": "Solo il team vede i clienti",
+      "no_access_description": "Chiedi a un amministratore se ti serve vedere questa pagina.",
+      "activity": {
+        "set": "ha impostato il cliente",
+        "changed_from": "ha cambiato il cliente da",
+        "to": "a",
+        "removed": "ha tolto il cliente"
+      }
+    },
+    "greeting": {
+      "morning": "Buongiorno",
+      "afternoon": "Buon pomeriggio",
+      "evening": "Buonasera"
+    },
+    "about": {
+      "title": "Informazioni su Atlante",
+      "menu": "Informazioni su Atlante",
+      "version": "Versione {version}",
+      "what": "Atlante è il programma con cui Zeta3 gestisce progetti, clienti e task.",
+      "based_on": "È basato su Plane, un programma libero con licenza GNU AGPL 3.0. Zeta3 lo ha modificato e ne mantiene le modifiche, con la stessa licenza.",
+      "source_atlante": "Codice sorgente di Atlante",
+      "source_plane": "Codice sorgente di Plane",
+      "license": "Licenza GNU AGPL 3.0",
+      "source_access": "Il codice di ogni versione di Atlante è pubblico, con la licenza AGPL-3.0 di Plane.",
+      "plane_version": "Basata su Plane {version}"
+    },
+    "project": {
+      "features_failed": "Progetto creato, ma alcune funzioni non si sono accese: accendile da Impostazioni del progetto, Funzioni."
+    },
+    "plane": {
+      "more": "Altro",
+      "hide": "Nascondi",
+      "sub_task_progress": "Avanzamento delle sotto-task",
+      "all_tasks": "Tutte le task",
+      "not_started": "Da fare"
+    },
+    "auth": {
+      "sign_in_header": "Accedi ad Atlante.",
+      "sign_up_header": "Crea il tuo account Atlante.",
+      "subheader": "La gestione dei progetti di Zeta3.",
+      "invited_sign_up": "Crea un account per lavorare con il tuo team.",
+      "invited_sign_in": "Accedi per lavorare con il tuo team."
+    },
+    "phases": {
+      "heading": "Modello e ruoli",
+      "template_in_use": "Il progetto segue il modello {name}. Le regole si legano al ruolo di ogni fase: puoi rinominare, colorare e spostare le fasi qui sopra senza romperle.",
+      "no_template": "Il progetto non segue un modello: le fasi non cambiano da sole persone e consegne.",
+      "apply": "Applica il modello",
+      "apply_confirm": "Applica {name}",
+      "apply_explanation": "Le fasi di partenza senza task prendono il nome e il colore delle fasi del modello; quelle che mancano vengono aggiunte. Non si cancella niente e le task che ci sono restano dove sono.",
+      "roles_heading": "Ruoli del progetto",
+      "roles_description": "Le fasi danno il lavoro a queste persone. Un cambio vale per le task che entrano in una fase da adesso.",
+      "rules_heading": "Regole delle fasi",
+      "rules_description": "Quando una task entra in una fase, cambiano da soli l'esecutore e la consegna.",
+      "columns": {
+        "phase": "Fase",
+        "role": "Ruolo della fase",
+        "executor": "Chi la fa",
+        "deadline": "Scadenza"
+      },
+      "nobody": "Nessuno",
+      "responsible": "Responsabile",
+      "responsible_from_project": "Responsabile: l'account del progetto",
+      "from_project": "Quello del progetto",
+      "role_from_project": "{role}: quelli del progetto",
+      "add_date": "Aggiungi la data",
+      "rule": "Regola della fase",
+      "activity": {
+        "phase": "Fase",
+        "automation": "Atlante"
+      },
+      "toast": {
+        "applied": "Modello applicato",
+        "error": "Non è stato possibile salvare"
+      },
+      "executor_info": "L'esecutore cambia da solo quando la task passa a un'altra fase: lo decidono i ruoli del progetto.",
+      "to_assign": "Da assegnare",
+      "missing_responsible": "Manca il responsabile",
+      "choose": "Scegli",
+      "no_reviewers": "Nessun revisore",
+      "home": {
+        "to_assign": "Da assegnare",
+        "without_responsible": "Senza responsabile",
+        "to_assign_hint": "le task di cui sei responsabile"
+      },
+      "missing_phases": "Il modello ha fasi nuove che il progetto non ha ancora: {phases}.",
+      "add_missing": "Aggiungi le fasi nuove",
+      "template_label": "Modello",
+      "no_template_choice": "Nessun modello",
+      "template_failed": "Progetto creato, ma il modello non è stato applicato: puoi applicarlo dalle impostazioni, nella pagina Fasi."
+    },
+    "urgency": {
+      "label": "Urgenza",
+      "choose": "Scegli l'urgenza"
+    },
+    "dates": {
+      "publication": "Pubblicazione",
+      "delivery": "Consegna"
+    },
+    "work_type": {
+      "label": "Tipo di lavoro",
+      "choose": "Scegli il tipo"
+    },
+    "approval": {
+      "badge": "Giro di revisione {round} di {included} inclusi",
+      "badge_extra": "Giro extra",
+      "waiting_title": "In attesa dell'approvazione del cliente",
+      "waiting_text": "Inviato {to} il {sent} da {who}. Il cliente ha tempo fino al {due} compreso per approvarlo o chiedere modifiche.",
+      "to_client": "al cliente",
+      "to_named": "a {client}",
+      "reminder_title": "In attesa dell'approvazione del cliente: restano {days} giorni",
+      "reminder_title_one": "In attesa dell'approvazione del cliente: resta 1 giorno",
+      "reminder_text": "Il {reminder} è il giorno del promemoria: va ricordato al cliente. Se non risponde entro il {due}, dal {after} il lavoro si considera approvato, come dice l'articolo 9.1 delle Condizioni Generali.",
+      "consent_title": "In attesa dell'approvazione esplicita del cliente",
+      "consent_text": "Per le presentazioni di strategia, brand e sito non vale il silenzio-assenso: serve sempre un sì del cliente. Inviato il {sent}; dopo 15 giorni senza risposta va sollecitato il cliente e chi lo segue riceve un avviso.",
+      "consent_late": "Sono passati 15 giorni senza risposta: serve il sì del cliente, la task resta ferma.",
+      "rounds_over_title": "I giri di revisione inclusi sono finiti",
+      "rounds_over_text": "Il contratto {with} comprende {included} giri di revisione e con questo sono stati usati tutti. Se il cliente chiede altre modifiche, il nuovo giro è a pagamento.",
+      "with_client": "con il cliente",
+      "with_named": "con {client}",
+      "approved_title": "Approvata dal cliente",
+      "approved_text": "{client} ha approvato il lavoro il {date} (registrato da {who}). La task è passata da sola alla fase {phase}.",
+      "changes_title": "Il cliente ha chiesto modifiche",
+      "changes_text": "{who} ha registrato le modifiche chieste dal cliente il {date}. {rounds} La task torna alla fase {phase} con la stessa urgenza.",
+      "changes_round": "Comincia il giro di revisione {next} di {included} inclusi.",
+      "changes_extra": "Comincia un giro extra, a pagamento: il contratto comprende {included} giri.",
+      "changes_micro": "Micro correzione: il giro non conta.",
+      "hint": "Finché non c'è il portale, la risposta del cliente la registra qui chi lo segue.",
+      "approve": "Approva",
+      "ask_changes": "Chiedi modifiche",
+      "note_label": "Cosa chiede il cliente",
+      "counts": "Conta come giro di revisione (file _2)",
+      "counts_hint": "Le micro correzioni (file _1.1, _1.2) non contano.",
+      "send_changes": "Registra le modifiche",
+      "cancel": "Annulla",
+      "error": "Non è stato possibile registrare la risposta",
+      "chip": "Dal cliente · restano {days} giorni",
+      "chip_one": "Dal cliente · resta 1 giorno",
+      "chip_late": "Dal cliente · tempo finito",
+      "home_title": "Approvazioni dei clienti in attesa",
+      "home_days": "restano {days} giorni",
+      "home_reminded": "promemoria, restano {days} giorni",
+      "home_consent": "serve il sì del cliente",
+      "the_client": "Il cliente",
+      "for_named": " per {client}",
+      "ready_title": "Pronto da inviare al cliente",
+      "ready_text": "Il lavoro è pronto{for}. Mandalo al cliente e premi \"Inviato al cliente\": i 15 giorni per rispondere partono da quel giorno.",
+      "ready_text_consent": "Il lavoro è pronto{for}. Mandalo al cliente e premi \"Inviato al cliente\". Per questo lavoro serve il sì del cliente: niente silenzio-assenso.",
+      "sent": "Inviato al cliente",
+      "silent_title": "Silenzio-assenso da confermare",
+      "silent_text": "Sono passati i 15 giorni dall'invio senza risposta del cliente: per l'articolo 9.1 delle Condizioni Generali il lavoro si considera approvato. Conferma e la task passa alla fase {phase}.",
+      "confirm": "Conferma l'approvazione",
+      "silent_done_title": "Approvata per silenzio-assenso",
+      "silent_done_text": "Il {date}, dopo 15 giorni senza risposta del cliente, {who} ha confermato l'approvazione (articolo 9.1). La task è passata alla fase {phase}.",
+      "home_ready": "da inviare",
+      "home_to_confirm": "silenzio-assenso da confermare"
+    }
+  }
+}

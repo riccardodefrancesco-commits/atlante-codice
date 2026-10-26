@@ -1,0 +1,418 @@
+{
+  "project_view": {
+    "sort_by": {
+      "created_at": "Creato il",
+      "updated_at": "Aggiornato il",
+      "name": "Nome"
+    }
+  },
+  "project_cycles": {
+    "add_cycle": "Aggiungi ciclo",
+    "more_details": "Altri dettagli",
+    "cycle": "Ciclo",
+    "update_cycle": "Aggiorna ciclo",
+    "create_cycle": "Crea ciclo",
+    "no_matching_cycles": "Nessun ciclo corrispondente",
+    "remove_filters_to_see_all_cycles": "Rimuovi i filtri per vedere tutti i cicli",
+    "remove_search_criteria_to_see_all_cycles": "Rimuovi i criteri di ricerca per vedere tutti i cicli",
+    "only_completed_cycles_can_be_archived": "Solo i cicli completati possono essere archiviati",
+    "start_date": "Data di inizio",
+    "end_date": "Data di fine",
+    "in_your_timezone": "Nel tuo fuso orario",
+    "transfer_work_items": "Trasferisci {count} task",
+    "transfer": {
+      "no_cycles_available": "Nessun altro ciclo disponibile per trasferire le task."
+    },
+    "date_range": "Intervallo di date",
+    "add_date": "Aggiungi data",
+    "active_cycle": {
+      "label": "Ciclo attivo",
+      "progress": "Avanzamento",
+      "chart": "Grafico di burndown",
+      "priority_issue": "Task ad alta priorità",
+      "assignees": "Esecutori",
+      "issue_burndown": "Burndown delle task",
+      "ideal": "Ideale",
+      "current": "Corrente",
+      "labels": "Etichette",
+      "trailing": "In ritardo",
+      "leading": "In anticipo"
+    },
+    "upcoming_cycle": {
+      "label": "Ciclo in arrivo"
+    },
+    "completed_cycle": {
+      "label": "Ciclo completato"
+    },
+    "status": {
+      "days_left": "Giorni rimanenti",
+      "completed": "Completato",
+      "yet_to_start": "Non ancora iniziato",
+      "in_progress": "In corso",
+      "draft": "Bozza"
+    },
+    "action": {
+      "restore": {
+        "title": "Ripristina ciclo",
+        "success": {
+          "title": "Ciclo ripristinato",
+          "description": "Il ciclo è stato ripristinato."
+        },
+        "failed": {
+          "title": "Ripristino del ciclo fallito",
+          "description": "Il ciclo non può essere ripristinato. Per favore, riprova."
+        }
+      },
+      "favorite": {
+        "loading": "Aggiunta del ciclo ai preferiti in corso",
+        "success": {
+          "description": "Ciclo aggiunto ai preferiti.",
+          "title": "Successo!"
+        },
+        "failed": {
+          "description": "Impossibile aggiungere il ciclo ai preferiti. Per favore, riprova.",
+          "title": "Errore!"
+        }
+      },
+      "unfavorite": {
+        "loading": "Rimozione del ciclo dai preferiti in corso",
+        "success": {
+          "description": "Ciclo rimosso dai preferiti.",
+          "title": "Successo!"
+        },
+        "failed": {
+          "description": "Impossibile rimuovere il ciclo dai preferiti. Per favore, riprova.",
+          "title": "Errore!"
+        }
+      },
+      "update": {
+        "loading": "Aggiornamento del ciclo in corso",
+        "success": {
+          "description": "Ciclo aggiornato con successo.",
+          "title": "Successo!"
+        },
+        "failed": {
+          "description": "Errore durante l'aggiornamento del ciclo. Per favore, riprova.",
+          "title": "Errore!"
+        },
+        "error": {
+          "already_exists": "Hai già un ciclo nelle date indicate, se vuoi creare una bozza di ciclo, puoi farlo rimuovendo entrambe le date."
+        }
+      }
+    },
+    "empty_state": {
+      "general": {
+        "title": "Raggruppa e definisci il tempo per il tuo lavoro in cicli.",
+        "description": "Suddividi il lavoro in blocchi temporali, lavora a ritroso dalla scadenza del tuo progetto per impostare le date e fai progressi tangibili come team.",
+        "primary_button": {
+          "text": "Imposta il tuo primo ciclo",
+          "comic": {
+            "title": "I cicli sono intervalli temporali ripetitivi.",
+            "description": "Uno sprint, un'iterazione o qualsiasi altro termine usato per il tracciamento settimanale o bisettimanale del lavoro è un ciclo."
+          }
+        }
+      },
+      "no_issues": {
+        "title": "Nessuna task aggiunta al ciclo",
+        "description": "Aggiungi o crea le task che desideri includere in questo ciclo",
+        "primary_button": {
+          "text": "Crea una nuova task"
+        },
+        "secondary_button": {
+          "text": "Aggiungi una task esistente"
+        }
+      },
+      "completed_no_issues": {
+        "title": "Nessuna task nel ciclo",
+        "description": "Nessuna task nel ciclo. Le task sono state trasferite o nascoste. Per vedere quelle nascoste, se ci sono, aggiorna le proprietà della visualizzazione."
+      },
+      "active": {
+        "title": "Nessun ciclo attivo",
+        "description": "Un ciclo attivo è quello che include la data odierna nel suo intervallo. Visualizza qui i dettagli e l'avanzamento del ciclo attivo."
+      },
+      "archived": {
+        "title": "Nessun ciclo archiviato ancora",
+        "description": "Per organizzare il tuo progetto, archivia i cicli completati. Li troverai qui una volta archiviati."
+      }
+    }
+  },
+  "project_views": {
+    "empty_state": {
+      "general": {
+        "title": "Salva visualizzazioni filtrate per il tuo progetto. Crea quante ne vuoi",
+        "description": "Le visualizzazioni sono un insieme di filtri salvati che usi frequentemente o a cui vuoi avere accesso rapido. Tutti i tuoi colleghi in un progetto possono vedere tutte le visualizzazioni e scegliere quella che fa per loro.",
+        "primary_button": {
+          "text": "Crea la tua prima visualizzazione",
+          "comic": {
+            "title": "Le visualizzazioni si basano sulle proprietà delle task.",
+            "description": "Puoi creare una visualizzazione da qui con quante proprietà e filtri desideri."
+          }
+        },
+        "filter": {
+          "title": "Nessuna visualizzazione corrispondente",
+          "description": "Nessuna visualizzazione corrisponde ai criteri di ricerca.\n Crea una nuova visualizzazione invece."
+        }
+      },
+      "no_archived_issues": {
+        "title": "Nessuna task archiviata ancora",
+        "description": "Manualmente o tramite automazione, puoi archiviare le task completate o annullati. Trovali qui una volta archiviati.",
+        "primary_button": {
+          "text": "Imposta automazione"
+        }
+      },
+      "issues_empty_filter": {
+        "title": "Nessuna task trovata corrispondente ai filtri applicati",
+        "secondary_button": {
+          "text": "Cancella tutti i filtri"
+        }
+      },
+      "public": {
+        "title": "Nessuna pagina pubblica ancora",
+        "description": "Visualizza qui le pagine condivise con tutti nel tuo progetto.",
+        "primary_button": {
+          "text": "Crea la tua prima pagina"
+        }
+      },
+      "archived": {
+        "title": "Nessuna pagina archiviata ancora",
+        "description": "Archivia le pagine che non sono più di tuo interesse. Potrai accedervi quando necessario."
+      },
+      "shared": {
+        "title": "Nessuna pagina condivisa ancora",
+        "description": "Le pagine che altri hanno condiviso con te appariranno qui."
+      }
+    },
+    "delete_view": {
+      "title": "Sei sicuro di voler eliminare questa visualizzazione?",
+      "content": "Se confermi, tutte le opzioni di ordinamento, filtro e visualizzazione + il layout che hai scelto per questa visualizzazione saranno eliminate permanentemente senza possibilità di ripristinarle."
+    }
+  },
+  "project_issues": {
+    "empty_state": {
+      "no_issues": {
+        "title": "Crea una task e assegnalo a qualcuno, anche a te stesso",
+        "description": "Considera le task come compiti, attività, lavori o JTBD. Una task e le sue sotto-task sono solitamente attività basate sul tempo assegnate ai membri del team. Il tuo team crea, assegna e completa le task per portare il progetto verso il suo obiettivo.",
+        "primary_button": {
+          "text": "Crea la tua prima task",
+          "comic": {
+            "title": "Le task sono i mattoni fondamentali in Atlante.",
+            "description": "Ridisegna l'interfaccia di Atlante, rebranding dell'azienda o lancia il nuovo sistema di iniezione del carburante sono esempi di task che probabilmente hanno sotto-task."
+          }
+        }
+      },
+      "no_archived_issues": {
+        "title": "Nessuna task archiviata ancora",
+        "description": "Manualmente o tramite automazione, puoi archiviare le task che sono stati completati o annullati. Li troverai qui una volta archiviati.",
+        "primary_button": {
+          "text": "Imposta l'automazione"
+        }
+      },
+      "issues_empty_filter": {
+        "title": "Nessuna task trovata corrispondente ai filtri applicati",
+        "secondary_button": {
+          "text": "Cancella tutti i filtri"
+        }
+      }
+    }
+  },
+  "project_module": {
+    "add_module": "Aggiungi Sezione",
+    "update_module": "Aggiorna Sezione",
+    "create_module": "Crea Sezione",
+    "archive_module": "Archivia Sezione",
+    "restore_module": "Ripristina Sezione",
+    "delete_module": "Elimina sezione",
+    "empty_state": {
+      "general": {
+        "title": "Associa i traguardi del tuo progetto alle Sezioni e traccia facilmente il lavoro aggregato.",
+        "description": "Un gruppo di task che appartengono a un genitore logico e gerarchico forma una sezione. Considerale come un modo per tracciare il lavoro in base ai traguardi del progetto. Hanno i propri intervalli temporali e scadenze, oltre ad analisi che ti aiutano a vedere quanto sei vicino o lontano da un traguardo.",
+        "primary_button": {
+          "text": "Crea la tua prima sezione",
+          "comic": {
+            "title": "Le sezioni aiutano a raggruppare il lavoro per gerarchia.",
+            "description": "Una sezione per il carrello, una sezione per il telaio e una sezione per il magazzino sono tutti buoni esempi di questo raggruppamento."
+          }
+        }
+      },
+      "no_issues": {
+        "title": "Nessuna task nella sezione",
+        "description": "Crea o aggiungi task che desideri completare come parte di questa sezione",
+        "primary_button": {
+          "text": "Crea nuove task"
+        },
+        "secondary_button": {
+          "text": "Aggiungi una task esistente"
+        }
+      },
+      "archived": {
+        "title": "Nessuna sezione archiviata ancora",
+        "description": "Per organizzare il tuo progetto, archivia le sezioni completate o annullate. Le troverai qui una volta archiviate."
+      },
+      "sidebar": {
+        "in_active": "Questa sezione non è ancora attiva.",
+        "invalid_date": "Data non valida. Inserisci una data valida."
+      }
+    },
+    "quick_actions": {
+      "archive_module": "Archivia sezione",
+      "archive_module_description": "Solo le sezioni completate o annullate possono essere archiviate.",
+      "delete_module": "Elimina sezione"
+    },
+    "toast": {
+      "copy": {
+        "success": "Link della sezione copiato negli appunti"
+      },
+      "delete": {
+        "success": "Sezione eliminata con successo",
+        "error": "Impossibile eliminare la sezione"
+      }
+    }
+  },
+  "project_page": {
+    "empty_state": {
+      "general": {
+        "title": "Scrivi una nota, un documento o una vera e propria base di conoscenza. Fai partire Galileo, l'assistente AI di Atlante, per aiutarti a iniziare",
+        "description": "Le pagine sono spazi per appunti in Atlante. Prendi note durante le riunioni, formattale facilmente, inserisci task, disponili usando una libreria di componenti e tienili tutti nel contesto del tuo progetto. Per velocizzare qualsiasi documento, invoca Galileo, l'IA di Atlante, con una scorciatoia o con il clic di un pulsante.",
+        "primary_button": {
+          "text": "Crea la tua prima pagina"
+        }
+      },
+      "private": {
+        "title": "Nessuna pagina privata ancora",
+        "description": "Tieni qui i tuoi appunti privati. Quando sarai pronto a condividerli, il team sarà a portata di clic.",
+        "primary_button": {
+          "text": "Crea la tua prima pagina"
+        }
+      },
+      "public": {
+        "title": "Nessuna pagina pubblica ancora",
+        "description": "Visualizza qui le pagine condivise con tutti nel tuo progetto.",
+        "primary_button": {
+          "text": "Crea la tua prima pagina"
+        }
+      },
+      "archived": {
+        "title": "Nessuna pagina archiviata ancora",
+        "description": "Archivia le pagine che non sono più di tuo interesse. Potrai accedervi quando necessario."
+      }
+    }
+  },
+  "disabled_project": {
+    "empty_state": {
+      "inbox": {
+        "title": "Le richieste in arrivo non sono attive per il progetto.",
+        "description": "Le richieste in arrivo ti aiutano a gestire le richieste che arrivano al progetto e ad aggiungerle come task nel tuo flusso. Accendile dalle impostazioni del progetto per gestire le richieste.",
+        "primary_button": {
+          "text": "Gestisci funzionalità"
+        }
+      },
+      "cycle": {
+        "title": "I cicli non sono abilitati per questo progetto.",
+        "description": "Suddividi il lavoro in blocchi temporali, lavora a ritroso dalla scadenza del tuo progetto per impostare le date e fai progressi tangibili come team. Abilita la funzionalità dei cicli per il tuo progetto per iniziare a usarli.",
+        "primary_button": {
+          "text": "Gestisci funzionalità"
+        }
+      },
+      "module": {
+        "title": "Le sezioni non sono abilitate per il progetto.",
+        "description": "Le sezioni sono i blocchi costitutivi del tuo progetto. Abilita le sezioni dalle impostazioni del progetto per iniziare a usarli.",
+        "primary_button": {
+          "text": "Gestisci funzionalità"
+        }
+      },
+      "page": {
+        "title": "Le pagine non sono abilitate per il progetto.",
+        "description": "Le pagine sono i blocchi costitutivi del tuo progetto. Abilita le pagine dalle impostazioni del progetto per iniziare a usarle.",
+        "primary_button": {
+          "text": "Gestisci funzionalità"
+        }
+      },
+      "view": {
+        "title": "Le visualizzazioni non sono abilitate per il progetto.",
+        "description": "Le visualizzazioni sono i blocchi costitutivi del tuo progetto. Abilita le visualizzazioni dalle impostazioni del progetto per iniziare a usarle.",
+        "primary_button": {
+          "text": "Gestisci funzionalità"
+        }
+      }
+    }
+  },
+  "project_modules": {
+    "status": {
+      "backlog": "Backlog",
+      "planned": "Pianificato",
+      "in_progress": "In corso",
+      "paused": "In pausa",
+      "completed": "Completato",
+      "cancelled": "Annullato"
+    },
+    "layout": {
+      "list": "Layout a lista",
+      "board": "Layout a galleria",
+      "timeline": "Layout a timeline"
+    },
+    "order_by": {
+      "name": "Nome",
+      "progress": "Avanzamento",
+      "issues": "Numero di task",
+      "due_date": "Scadenza",
+      "created_at": "Data di creazione",
+      "manual": "Manuale"
+    }
+  },
+  "project_members": {
+    "full_name": "Nome completo",
+    "display_name": "Nome visualizzato",
+    "email": "Email",
+    "joining_date": "Data di adesione",
+    "role": "Ruolo"
+  },
+  "project": {
+    "members_import": {
+      "title": "Importa membri da CSV",
+      "description": "Carica un CSV con colonne: Email e Ruolo (5=Ospite, 15=Membro, 20=Amministratore). Gli utenti devono già essere membri dello spazio di lavoro.",
+      "download_sample": "Scarica CSV di esempio",
+      "dropzone": {
+        "active": "Rilascia il file CSV qui",
+        "inactive": "Trascina e rilascia o fai clic per caricare",
+        "file_type": "Sono supportati solo file .csv"
+      },
+      "buttons": {
+        "cancel": "Annulla",
+        "import": "Importa",
+        "try_again": "Riprova",
+        "close": "Chiudi",
+        "done": "Fatto"
+      },
+      "progress": {
+        "uploading": "Caricamento...",
+        "importing": "Importazione..."
+      },
+      "summary": {
+        "title": {
+          "complete": "Importazione completata"
+        },
+        "message": {
+          "success": "{count} membr{plural} importat{plural} con successo nel progetto.",
+          "no_imports": "Nessun nuovo membro è stato importato dal file CSV."
+        },
+        "stats": {
+          "added": "Aggiunti",
+          "reactivated": "Riattivati",
+          "already_members": "Già membri",
+          "skipped": "Ignorati"
+        },
+        "download_errors": "Scarica dettagli ignorati"
+      },
+      "toast": {
+        "invalid_file": {
+          "title": "File non valido",
+          "message": "Sono supportati solo file CSV."
+        },
+        "import_failed": {
+          "title": "Importazione fallita",
+          "message": "Qualcosa è andato storto."
+        }
+      }
+    }
+  }
+}

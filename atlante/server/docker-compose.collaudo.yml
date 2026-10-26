@@ -1,0 +1,140 @@
+# Copyright (c) 2026 Zeta3. Parte di Atlante, copia modificata di Plane.
+# SPDX-License-Identifier: AGPL-3.0-only
+# See the LICENSE file for details.
+
+# Atlante on the test server of the online trial (zeta3-progetti, docs/collaudo-0.3.md, section 1).
+# Every image is built here from Atlante's own code: the interface is the built one (issue #27), never the
+# development server. Only the proxy has ports: 80 (only to send to HTTPS) and 443. The administration panel
+# answers on 127.0.0.1:8080 of the server, reachable only through an SSH tunnel. Database, queues, file
+# storage and cache have no port at all: they talk only inside the "interno" network.
+#
+# Secrets are in .env, api.env and live.env next to this file, written on the server by crea-segreti.sh
+# (never in git, readable only by their owner).
+# Usage, on the server, from this folder:  docker compose -f docker-compose.collaudo.yml up -d --build
+
+name: atlante-collaudo
+
+x-api: &api
+  build:
+    context: ../../apps/api
+    dockerfile: Dockerfile.api
+  restart: always
+  env_file:
+    - ./api.env
+  networks: [interno]
+  depends_on:
+    - plane-db
+    - plane-redis
+    - plane-mq
+
+services:
+  web:
+    build:
+      context: ../..
+      dockerfile: ./apps/web/Dockerfile.web
+    restart: always
+    networks: [interno]
+
+  admin:
+    build:
+      context: ../..
+      dockerfile: ./apps/admin/Dockerfile.admin
+    restart: always
+    networks: [interno]
+
+  live:
+    build:
+      context: ../..
+      dockerfile: ./apps/live/Dockerfile.live
+    restart: always
+    env_file:
+      - ./live.env
+    networks: [interno]
+
+  api:
+    <<: *api
+    command: ./bin/docker-entrypoint-api.sh
+
+  worker:
+    <<: *api
+    command: ./bin/docker-entrypoint-worker.sh
+
+  beat-worker:
+    <<: *api
+    command: ./bin/docker-entrypoint-beat.sh
+
+  migrator:
+    <<: *api
+    restart: "no"
+    command: ./bin/docker-entrypoint-migrator.sh
+
+  plane-db:
+    image: postgres:15.7-alpine
+    restart: always
+    command: postgres -c 'max_connections=200'
+    env_file:
+      - ./.env
+    environment:
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks: [interno]
+
+  plane-redis:
+    image: valkey/valkey:7.2.11-alpine
+    restart: always
+    volumes:
+      - redisdata:/data
+    networks: [interno]
+
+  plane-mq:
+    image: rabbitmq:3.13.6-alpine
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks: [interno]
+
+  plane-minio:
+    image: docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z
+    restart: always
+    command: server /export
+    env_file:
+      - ./.env
+    volumes:
+      - uploads:/export
+    networks: [interno]
+
+  proxy:
+    build:
+      context: ../../apps/proxy
+      dockerfile: Dockerfile.ce
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+      - "127.0.0.1:8080:8080"
+    env_file:
+      - ./.env
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [interno]
+    depends_on:
+      - web
+      - api
+      - admin
+      - live
+
+networks:
+  interno:
+
+volumes:
+  pgdata:
+  redisdata:
+  uploads:
+  rabbitmq_data:
+  caddy_data:
+  caddy_config:

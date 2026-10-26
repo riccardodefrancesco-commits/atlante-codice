@@ -1,0 +1,167 @@
+{
+  "atlante": {
+    "client": {
+      "label": "Client",
+      "plural": "Clients",
+      "none": "No client",
+      "select": "Choose the client",
+      "search": "Search a client",
+      "new": "New client",
+      "not_found": "Client not found",
+      "not_found_description": "The client does not exist or is not part of this workspace.",
+      "back_to_list": "Back to clients",
+      "status": {
+        "active": "Active",
+        "archived": "Archived"
+      },
+      "list": {
+        "active": "Active",
+        "archived": "Archived",
+        "columns": {
+          "name": "Client",
+          "code": "Code",
+          "contact": "Contact",
+          "projects": "Projects",
+          "open": "Open work items",
+          "overdue": "Overdue"
+        },
+        "empty_title": "No clients yet",
+        "empty_description": "Each client gathers its projects and work items in one card. Create the first one to start.",
+        "empty_description_member": "Admins add the clients: you will find them here.",
+        "empty_archived": "No archived clients",
+        "no_results": "No client with this name"
+      },
+      "form": {
+        "create_title": "New client",
+        "edit_title": "Edit client",
+        "name": "Name",
+        "name_placeholder": "Client name",
+        "name_required": "The name is required",
+        "code": "Code",
+        "code_placeholder": "For example ALF",
+        "code_help": "1 to 12 letters or digits: shown on work item cards",
+        "code_invalid": "Letters and digits only, at most 12",
+        "code_required": "The code is required",
+        "color": "Color",
+        "color_invalid": "Write the color as #RRGGBB",
+        "contact": "Internal contact",
+        "contact_placeholder": "Who follows the client",
+        "email": "Email",
+        "website": "Website",
+        "notes": "Internal notes",
+        "notes_help": "Team only: clients never see them",
+        "create": "Create client",
+        "creating": "Creating...",
+        "save": "Save",
+        "saving": "Saving..."
+      },
+      "toast": {
+        "created": "Client created",
+        "updated": "Client updated",
+        "archived": "Client archived",
+        "restored": "Client restored",
+        "linked": "Project linked to the client",
+        "unlinked": "Project unlinked from the client",
+        "error": "Something went wrong: try again"
+      },
+      "actions": {
+        "edit": "Edit",
+        "archive": "Archive",
+        "restore": "Restore"
+      },
+      "archive_confirm": {
+        "title": "Archive {name}?",
+        "description": "Projects and work items stay where they are. Until you restore it, the client cannot be linked to new projects and is not offered as a choice.",
+        "confirm": "Archive",
+        "confirming": "Archiving..."
+      },
+      "tabs": {
+        "overview": "Overview",
+        "projects": "Projects",
+        "issues": "Work items"
+      },
+      "overview": {
+        "details": "Client details",
+        "notes": "Internal notes",
+        "no_notes": "No notes",
+        "no_contact": "No contact",
+        "work": "Work items",
+        "to_do": "To do",
+        "in_progress": "In progress",
+        "done": "Completed",
+        "overdue": "Overdue"
+      },
+      "projects": {
+        "link": "Link a project",
+        "link_placeholder": "Choose a project without client",
+        "create": "Create a project for this client",
+        "unlink": "Unlink",
+        "empty": "No project linked to this client",
+        "progress": "{done} of {total} completed",
+        "open_issues": "{count} open",
+        "overdue_issues": "{count} overdue",
+        "archived": "Archived",
+        "no_free_projects": "Every project already has a client"
+      },
+      "issues": {
+        "empty": "No work items for this client",
+        "truncated": "Showing the first {shown} of {total} work items",
+        "due": "Due date",
+        "project": "Project",
+        "state": "State",
+        "groups": {
+          "backlog": "Backlog",
+          "unstarted": "Not started",
+          "started": "In progress",
+          "completed": "Completed",
+          "cancelled": "Cancelled"
+        }
+      },
+      "command": {
+        "open_clients": "Go to Clients"
+      },
+      "no_access_title": "Only the team sees clients",
+      "no_access_description": "Ask an admin if you need to see this page.",
+      "activity": {
+        "set": "set the client to",
+        "changed_from": "changed the client from",
+        "to": "to",
+        "removed": "removed the client"
+      }
+    },
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    },
+    "about": {
+      "title": "About Atlante",
+      "menu": "About Atlante",
+      "version": "Version {version}",
+      "what": "Atlante is the program Zeta3 uses to manage projects, clients and work items.",
+      "based_on": "It is based on Plane, free software licensed under the GNU AGPL 3.0. Zeta3 modified it and maintains the changes, under the same license.",
+      "source_atlante": "Atlante source code",
+      "source_plane": "Plane source code",
+      "license": "GNU AGPL 3.0 license",
+      "source_access": "The code of every version of Atlante is public, under Plane's AGPL-3.0 license.",
+      "plane_version": "Based on Plane {version}"
+    },
+    "project": {
+      "features_failed": "Project created, but some features did not switch on: switch them on in the project settings, Features."
+    },
+    "plane": {
+      "more": "More",
+      "hide": "Hide",
+      "sub_task_progress": "Sub-task progress",
+      "all_tasks": "All tasks",
+      "not_started": "Not started"
+    },
+    "auth": {
+      "sign_in_header": "Sign in to Atlante.",
+      "sign_up_header": "Create your Atlante account.",
+      "subheader": "Zeta3's project management.",
+      "invited_sign_up": "Create an account to work with your team.",
+      "invited_sign_in": "Sign in to work with your team."
+    }
+  }
+}

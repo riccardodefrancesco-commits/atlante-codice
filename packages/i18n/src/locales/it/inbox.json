@@ -1,0 +1,87 @@
+{
+  "inbox_issue": {
+    "status": {
+      "pending": {
+        "title": "In sospeso",
+        "description": "In sospeso"
+      },
+      "declined": {
+        "title": "Rifiutato",
+        "description": "Rifiutato"
+      },
+      "snoozed": {
+        "title": "Snoozed",
+        "description": "{days, plural, one {# giorno} other {# giorni}} rimanenti"
+      },
+      "accepted": {
+        "title": "Accettato",
+        "description": "Accettato"
+      },
+      "duplicate": {
+        "title": "Duplicato",
+        "description": "Duplicato"
+      }
+    },
+    "modals": {
+      "decline": {
+        "title": "Rifiuta task",
+        "content": "Sei sicuro di voler rifiutare la task {value}?"
+      },
+      "delete": {
+        "title": "Elimina task",
+        "content": "Sei sicuro di voler eliminare la task {value}?",
+        "success": "Task eliminata con successo"
+      }
+    },
+    "errors": {
+      "snooze_permission": "Solo gli amministratori del progetto possono snoozare/non snoozare le task",
+      "accept_permission": "Solo gli amministratori del progetto possono accettare le task",
+      "decline_permission": "Solo gli amministratori del progetto possono rifiutare le task"
+    },
+    "actions": {
+      "accept": "Accetta",
+      "decline": "Rifiuta",
+      "snooze": "Snoozed",
+      "unsnooze": "Annulla snooze",
+      "copy": "Copia link della task",
+      "delete": "Elimina",
+      "open": "Apri task",
+      "mark_as_duplicate": "Segna come duplicato",
+      "move": "Sposta {value} nelle task del progetto"
+    },
+    "source": {
+      "in-app": "nell'app"
+    },
+    "order_by": {
+      "created_at": "Creato il",
+      "updated_at": "Aggiornato il",
+      "id": "ID"
+    },
+    "label": "Richieste in arrivo",
+    "page_label": "{workspace} - Richieste in arrivo",
+    "modal": {
+      "title": "Crea task per le richieste in arrivo"
+    },
+    "tabs": {
+      "open": "Aperto",
+      "closed": "Chiuso"
+    },
+    "empty_state": {
+      "sidebar_open_tab": {
+        "title": "Nessuna task aperta",
+        "description": "Trova qui le task aperte. Crea una nuova task."
+      },
+      "sidebar_closed_tab": {
+        "title": "Nessuna task chiusa",
+        "description": "Tutte le task, accettate o rifiutate, si trovano qui."
+      },
+      "sidebar_filter": {
+        "title": "Nessuna task corrispondente",
+        "description": "Nessuna task corrisponde al filtro applicato in richieste in arrivo. Crea una nuova task."
+      },
+      "detail": {
+        "title": "Seleziona una task per visualizzarne i dettagli."
+      }
+    }
+  }
+}

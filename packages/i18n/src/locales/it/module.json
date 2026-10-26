@@ -1,0 +1,7 @@
+{
+  "module": {
+    "label": "{count, plural, one {Sezione} other {Sezioni}}",
+    "no_module": "Nessuna sezione",
+    "select": "Aggiungi sezioni"
+  }
+}

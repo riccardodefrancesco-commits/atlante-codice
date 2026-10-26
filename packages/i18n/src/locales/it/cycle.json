@@ -1,0 +1,41 @@
+{
+  "active_cycle": {
+    "empty_state": {
+      "progress": {
+        "title": "Aggiungi task al ciclo per visualizzarne l'avanzamento"
+      },
+      "chart": {
+        "title": "Aggiungi task al ciclo per visualizzare il grafico di burndown."
+      },
+      "priority_issue": {
+        "title": "Visualizza in anteprima le task ad alta priorità del ciclo."
+      },
+      "assignee": {
+        "title": "Aggiungi esecutori alle task per vedere la ripartizione per esecutore."
+      },
+      "label": {
+        "title": "Aggiungi etichette alle task per vedere la ripartizione per etichette."
+      }
+    }
+  },
+  "cycle": {
+    "label": "{count, plural, one {Ciclo} other {Cicli}}",
+    "no_cycle": "Nessun ciclo"
+  },
+  "active_cycle_analytics": {
+    "empty_state": {
+      "progress": {
+        "title": "Aggiungi task al ciclo per vedere il suo\n progresso"
+      },
+      "priority": {
+        "title": "Osserva task ad alta priorità affrontati in\n il ciclo a colpo d'occhio."
+      },
+      "assignee": {
+        "title": "Aggiungi esecutori alle task per vedere una\n distribuzione del lavoro per esecutori."
+      },
+      "label": {
+        "title": "Aggiungi etichette alle task per vedere la\n distribuzione del lavoro per etichette."
+      }
+    }
+  }
+}

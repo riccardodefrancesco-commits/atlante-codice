@@ -1,0 +1,283 @@
+{
+  "atlante": {
+    "client": {
+      "label": "Client",
+      "plural": "Clients",
+      "none": "No client",
+      "select": "Choose the client",
+      "search": "Search a client",
+      "new": "New client",
+      "not_found": "Client not found",
+      "not_found_description": "The client does not exist or is not part of this workspace.",
+      "back_to_list": "Back to clients",
+      "status": {
+        "active": "Active",
+        "archived": "Archived"
+      },
+      "list": {
+        "active": "Active",
+        "archived": "Archived",
+        "columns": {
+          "name": "Client",
+          "code": "Code",
+          "contact": "Contact",
+          "projects": "Projects",
+          "open": "Open work items",
+          "overdue": "Overdue"
+        },
+        "empty_title": "No clients yet",
+        "empty_description": "Each client gathers its projects and work items in one card. Create the first one to start.",
+        "empty_description_member": "Admins add the clients: you will find them here.",
+        "empty_archived": "No archived clients",
+        "no_results": "No client with this name"
+      },
+      "form": {
+        "create_title": "New client",
+        "edit_title": "Edit client",
+        "name": "Name",
+        "name_placeholder": "Client name",
+        "name_required": "The name is required",
+        "code": "Code",
+        "code_placeholder": "For example ALF",
+        "code_help": "1 to 12 letters or digits: shown on work item cards",
+        "code_invalid": "Letters and digits only, at most 12",
+        "code_required": "The code is required",
+        "color": "Color",
+        "color_invalid": "Write the color as #RRGGBB",
+        "contact": "Internal contact",
+        "contact_placeholder": "Who follows the client",
+        "email": "Email",
+        "website": "Website",
+        "notes": "Internal notes",
+        "notes_help": "Team only: clients never see them",
+        "create": "Create client",
+        "creating": "Creating...",
+        "save": "Save",
+        "saving": "Saving...",
+        "included_revisions": "Included revision rounds",
+        "included_revisions_help": "As in the client's contract: further rounds are paid."
+      },
+      "toast": {
+        "created": "Client created",
+        "updated": "Client updated",
+        "archived": "Client archived",
+        "restored": "Client restored",
+        "linked": "Project linked to the client",
+        "unlinked": "Project unlinked from the client",
+        "error": "Something went wrong: try again"
+      },
+      "actions": {
+        "edit": "Edit",
+        "archive": "Archive",
+        "restore": "Restore"
+      },
+      "archive_confirm": {
+        "title": "Archive {name}?",
+        "description": "Projects and work items stay where they are. Until you restore it, the client cannot be linked to new projects and is not offered as a choice.",
+        "confirm": "Archive",
+        "confirming": "Archiving..."
+      },
+      "tabs": {
+        "overview": "Overview",
+        "projects": "Projects",
+        "issues": "Work items"
+      },
+      "overview": {
+        "details": "Client details",
+        "notes": "Internal notes",
+        "no_notes": "No notes",
+        "no_contact": "No contact",
+        "work": "Work items",
+        "to_do": "To do",
+        "in_progress": "In progress",
+        "done": "Completed",
+        "overdue": "Overdue"
+      },
+      "projects": {
+        "link": "Link a project",
+        "link_placeholder": "Choose a project without client",
+        "create": "Create a project for this client",
+        "unlink": "Unlink",
+        "empty": "No project linked to this client",
+        "progress": "{done} of {total} completed",
+        "open_issues": "{count} open",
+        "overdue_issues": "{count} overdue",
+        "archived": "Archived",
+        "no_free_projects": "Every project already has a client"
+      },
+      "issues": {
+        "empty": "No work items for this client",
+        "truncated": "Showing the first {shown} of {total} work items",
+        "due": "Due date",
+        "project": "Project",
+        "state": "State",
+        "groups": {
+          "backlog": "Backlog",
+          "unstarted": "Not started",
+          "started": "In progress",
+          "completed": "Completed",
+          "cancelled": "Cancelled"
+        }
+      },
+      "command": {
+        "open_clients": "Go to Clients"
+      },
+      "no_access_title": "Only the team sees clients",
+      "no_access_description": "Ask an admin if you need to see this page.",
+      "activity": {
+        "set": "set the client to",
+        "changed_from": "changed the client from",
+        "to": "to",
+        "removed": "removed the client"
+      }
+    },
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    },
+    "about": {
+      "title": "About Atlante",
+      "menu": "About Atlante",
+      "version": "Version {version}",
+      "what": "Atlante is the program Zeta3 uses to manage projects, clients and work items.",
+      "based_on": "It is based on Plane, free software licensed under the GNU AGPL 3.0. Zeta3 modified it and maintains the changes, under the same license.",
+      "source_atlante": "Atlante source code",
+      "source_plane": "Plane source code",
+      "license": "GNU AGPL 3.0 license",
+      "source_access": "The code of every version of Atlante is public, under Plane's AGPL-3.0 license.",
+      "plane_version": "Based on Plane {version}"
+    },
+    "project": {
+      "features_failed": "Project created, but some features did not switch on: switch them on in the project settings, Features."
+    },
+    "plane": {
+      "more": "More",
+      "hide": "Hide",
+      "sub_task_progress": "Sub-task progress",
+      "all_tasks": "All tasks",
+      "not_started": "Not started"
+    },
+    "auth": {
+      "sign_in_header": "Sign in to Atlante.",
+      "sign_up_header": "Create your Atlante account.",
+      "subheader": "Zeta3's project management.",
+      "invited_sign_up": "Create an account to work with your team.",
+      "invited_sign_in": "Sign in to work with your team."
+    },
+    "phases": {
+      "heading": "Template and roles",
+      "template_in_use": "The project follows the {name} template. Rules are bound to the role of each phase: rename, recolor and move the phases above without breaking them.",
+      "no_template": "The project follows no template: phases do not change people and delivery dates.",
+      "apply": "Apply the template",
+      "apply_confirm": "Apply {name}",
+      "apply_explanation": "Starting phases without tasks take the name and color of the template phases; missing ones are added. Nothing is deleted and existing tasks stay where they are.",
+      "roles_heading": "Project roles",
+      "roles_description": "Phases give the work to these people. A change holds for tasks entering a phase from now on.",
+      "rules_heading": "Phase rules",
+      "rules_description": "When a task enters a phase, executor and delivery date change by themselves.",
+      "columns": {
+        "phase": "Phase",
+        "role": "Phase role",
+        "executor": "Who does it",
+        "deadline": "Deadline"
+      },
+      "nobody": "Nobody",
+      "responsible": "Responsible",
+      "responsible_from_project": "Responsible: the project's account",
+      "from_project": "The project's",
+      "role_from_project": "{role}: the project's",
+      "add_date": "Add date",
+      "rule": "Phase rule",
+      "activity": {
+        "phase": "Phase",
+        "automation": "Atlante"
+      },
+      "toast": {
+        "applied": "Template applied",
+        "error": "Could not save"
+      },
+      "executor_info": "The executor changes by itself when the task moves to another phase: the project roles decide it.",
+      "to_assign": "To assign",
+      "missing_responsible": "No responsible person",
+      "choose": "Choose",
+      "no_reviewers": "No reviewers",
+      "home": {
+        "to_assign": "To assign",
+        "without_responsible": "Without responsible person",
+        "to_assign_hint": "the tasks you are responsible for"
+      },
+      "missing_phases": "The template has new phases the project does not have yet: {phases}.",
+      "add_missing": "Add the new phases",
+      "template_label": "Template",
+      "no_template_choice": "No template",
+      "template_failed": "Project created, but the template was not applied: apply it from the settings, in the Phases page."
+    },
+    "urgency": {
+      "label": "Urgency",
+      "choose": "Choose the urgency"
+    },
+    "dates": {
+      "publication": "Publication",
+      "delivery": "Delivery"
+    },
+    "work_type": {
+      "label": "Kind of work",
+      "choose": "Choose the kind"
+    },
+    "approval": {
+      "badge": "Revision round {round} of {included} included",
+      "badge_extra": "Extra round",
+      "waiting_title": "Waiting for the client's approval",
+      "waiting_text": "Sent {to} on {sent} by {who}. The client has until {due} included to approve it or ask for changes.",
+      "to_client": "to the client",
+      "to_named": "to {client}",
+      "reminder_title": "Waiting for the client's approval: {days} days left",
+      "reminder_title_one": "Waiting for the client's approval: 1 day left",
+      "reminder_text": "{reminder} is the reminder day: remind the client. Without an answer by {due}, from {after} the work is approved (article 9.1).",
+      "consent_title": "Waiting for the client's explicit approval",
+      "consent_text": "Strategy, brand and site presentations need an explicit yes. Sent on {sent}; after 15 days without an answer the client must be reminded.",
+      "consent_late": "15 days without an answer: the client's yes is needed, the task stays.",
+      "rounds_over_title": "The included revision rounds are used",
+      "rounds_over_text": "The contract {with} includes {included} revision rounds and with this one all are used. Further changes are paid.",
+      "with_client": "with the client",
+      "with_named": "with {client}",
+      "approved_title": "Approved by the client",
+      "approved_text": "{client} approved the work on {date} (recorded by {who}). The task moved to {phase}.",
+      "changes_title": "The client asked for changes",
+      "changes_text": "{who} recorded the client's changes on {date}. {rounds} The task goes back to {phase} with the same urgency.",
+      "changes_round": "Revision round {next} of {included} included starts.",
+      "changes_extra": "An extra, paid round starts: the contract includes {included}.",
+      "changes_micro": "Micro fix: the round does not count.",
+      "hint": "Until the portal, the person following the client records the answer here.",
+      "approve": "Approve",
+      "ask_changes": "Ask for changes",
+      "note_label": "What the client asks",
+      "counts": "Counts as a revision round (file _2)",
+      "counts_hint": "Micro fixes (files _1.1, _1.2) do not count.",
+      "send_changes": "Record the changes",
+      "cancel": "Cancel",
+      "error": "Could not record the answer",
+      "chip": "Client · {days} days left",
+      "chip_one": "Client · 1 day left",
+      "chip_late": "Client · time is up",
+      "home_title": "Client approvals waiting",
+      "home_days": "{days} days left",
+      "home_reminded": "reminder, {days} days left",
+      "home_consent": "needs the client's yes",
+      "the_client": "The client",
+      "for_named": " for {client}",
+      "ready_title": "Ready to send to the client",
+      "ready_text": "The work is ready{for}. Send it to the client and press \"Sent to the client\": the 15 days start from that day.",
+      "ready_text_consent": "The work is ready{for}. Send it and press \"Sent to the client\". It needs the client's yes: no silent consent.",
+      "sent": "Sent to the client",
+      "silent_title": "Silent consent to confirm",
+      "silent_text": "15 days passed without an answer: by article 9.1 the work is approved. Confirm and the task moves to {phase}.",
+      "confirm": "Confirm the approval",
+      "silent_done_title": "Approved by silent consent",
+      "silent_done_text": "On {date}, after 15 days without an answer, {who} confirmed the approval (article 9.1). The task moved to {phase}.",
+      "home_ready": "to send",
+      "home_to_confirm": "silent consent to confirm"
+    }
+  }
+}

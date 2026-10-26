@@ -1,0 +1,270 @@
+{
+  "common_empty_state": {
+    "progress": {
+      "title": "Non ci sono ancora metriche di progresso da mostrare.",
+      "description": "Inizia a impostare i valori delle proprietà nelle task per vedere qui le metriche di progresso."
+    },
+    "updates": {
+      "title": "Nessun aggiornamento ancora.",
+      "description": "Una volta che i membri del progetto aggiungono aggiornamenti, appariranno qui"
+    },
+    "search": {
+      "title": "Nessun risultato corrispondente.",
+      "description": "Nessun risultato trovato. Prova a modificare i termini di ricerca."
+    },
+    "not_found": {
+      "title": "Oops! Qualcosa sembra andare storto",
+      "description": "Al momento non riusciamo a recuperare il tuo account plane. Potrebbe trattarsi di un errore di rete.",
+      "cta_primary": "Prova a ricaricare"
+    },
+    "server_error": {
+      "title": "Errore del server",
+      "description": "Non riusciamo a connetterci e recuperare dati dal nostro server. Non preoccuparti, ci stiamo lavorando.",
+      "cta_primary": "Prova a ricaricare"
+    }
+  },
+  "project_empty_state": {
+    "no_access": {
+      "title": "Sembra che tu non abbia accesso a questo progetto",
+      "restricted_description": "Contatta l'amministratore per richiedere l'accesso e potrai continuare qui.",
+      "join_description": "Clicca sul pulsante qui sotto per unirti.",
+      "cta_primary": "Unisciti al progetto",
+      "cta_loading": "Unione al progetto in corso"
+    },
+    "invalid_project": {
+      "title": "Progetto non trovato",
+      "description": "Il progetto che stai cercando non esiste."
+    },
+    "work_items": {
+      "title": "Inizia con la tua prima task.",
+      "description": "Le task sono i mattoni del tuo progetto — assegna proprietari, imposta urgenza e traccia facilmente i progressi.",
+      "cta_primary": "Crea la tua prima task"
+    },
+    "cycles": {
+      "title": "Raggruppa e delimita temporalmente il tuo lavoro in Cicli.",
+      "description": "Suddividi il lavoro in blocchi temporali, lavora a ritroso dalla scadenza del progetto per impostare le date e fai progressi tangibili come team.",
+      "cta_primary": "Imposta il tuo primo ciclo"
+    },
+    "cycle_work_items": {
+      "title": "Nessuna task da mostrare in questo ciclo",
+      "description": "Crea task per iniziare a monitorare il progresso del tuo team in questo ciclo e raggiungere i tuoi obiettivi in tempo.",
+      "cta_primary": "Crea task",
+      "cta_secondary": "Aggiungi task esistente"
+    },
+    "modules": {
+      "title": "Mappa gli obiettivi del tuo progetto alle Sezioni e traccia facilmente.",
+      "description": "Le sezioni sono costituite da task interconnesse. Aiutano a monitorare i progressi attraverso le fasi del progetto, ciascuna con scadenze specifiche e analitiche per indicare quanto sei vicino al raggiungimento di quelle fasi.",
+      "cta_primary": "Imposta la tua prima sezione"
+    },
+    "module_work_items": {
+      "title": "Nessuna task da mostrare in questa sezione",
+      "description": "Crea task per iniziare a monitorare questa sezione.",
+      "cta_primary": "Crea task",
+      "cta_secondary": "Aggiungi task esistente"
+    },
+    "views": {
+      "title": "Salva viste personalizzate per il tuo progetto",
+      "description": "Le viste sono filtri salvati che ti aiutano ad accedere rapidamente alle informazioni che usi di più. Collabora senza sforzo mentre i colleghi condividono e personalizzano le viste secondo le loro esigenze specifiche.",
+      "cta_primary": "Crea vista"
+    },
+    "no_work_items_in_project": {
+      "title": "Nessuna task nel progetto ancora",
+      "description": "Aggiungi task al tuo progetto e suddividi il lavoro in pezzi tracciabili con le viste.",
+      "cta_primary": "Aggiungi task"
+    },
+    "work_item_filter": {
+      "title": "Nessuna task trovata",
+      "description": "Il filtro attuale non ha restituito risultati. Prova a modificare i filtri.",
+      "cta_primary": "Aggiungi task"
+    },
+    "pages": {
+      "title": "Documenta tutto — dalle note ai PRD",
+      "description": "Le pagine ti permettono di catturare e organizzare informazioni in un unico posto. Scrivi note di riunioni, documentazione di progetto e PRD, incorpora task e strutturali con componenti pronti all'uso.",
+      "cta_primary": "Crea la tua prima Pagina"
+    },
+    "archive_pages": {
+      "title": "Nessuna pagina archiviata ancora",
+      "description": "Archivia le pagine non nel tuo radar. Accedi a esse qui quando necessario."
+    },
+    "intake_sidebar": {
+      "title": "Registra richieste di Richieste in arrivo",
+      "description": "Invia nuove richieste da rivedere, dare priorità e tracciare all'interno del flusso di lavoro del tuo progetto.",
+      "cta_primary": "Crea richiesta di Richieste in arrivo"
+    },
+    "intake_main": {
+      "title": "Seleziona una task di Richieste in arrivo per visualizzarne i dettagli"
+    },
+    "epics": {
+      "title": "Trasforma progetti complessi in epiche strutturate.",
+      "description": "Un'epica ti aiuta a organizzare grandi obiettivi in attività più piccole e tracciabili.",
+      "cta_primary": "Crea un'Epica",
+      "cta_secondary": "Documentazione"
+    },
+    "epic_work_items": {
+      "title": "Non hai ancora aggiunto task a questa epica.",
+      "description": "Inizia aggiungendo alcune task a questa epica e tracciandoli qui.",
+      "cta_secondary": "Aggiungi task"
+    }
+  },
+  "workspace_empty_state": {
+    "archive_epics": {
+      "title": "Nessuna epica archiviata ancora",
+      "description": "Puoi archiviare le epiche completate o annullate. Trovalle qui una volta archiviate."
+    },
+    "archive_work_items": {
+      "title": "Nessuna task archiviata ancora",
+      "description": "Manualmente o tramite automazione, puoi archiviare task completate o annullati. Trovali qui una volta archiviati.",
+      "cta_primary": "Imposta automazione"
+    },
+    "archive_cycles": {
+      "title": "Nessun ciclo archiviato ancora",
+      "description": "Per riordinare il tuo progetto, archivia i cicli completati. Trovali qui una volta archiviati."
+    },
+    "archive_modules": {
+      "title": "Nessuna sezione archiviata ancora",
+      "description": "Per riordinare il tuo progetto, archivia le sezioni completate o annullate. Trovale qui una volta archiviate."
+    },
+    "home_widget_quick_links": {
+      "title": "Mantieni a portata di mano riferimenti importanti, risorse o documenti per il tuo lavoro"
+    },
+    "inbox_sidebar_all": {
+      "title": "Gli aggiornamenti per le tue task sottoscritte appariranno qui"
+    },
+    "inbox_sidebar_mentions": {
+      "title": "Le menzioni per le tue task appariranno qui"
+    },
+    "your_work_by_priority": {
+      "title": "Nessuna task assegnata ancora"
+    },
+    "your_work_by_state": {
+      "title": "Nessuna task assegnata ancora"
+    },
+    "views": {
+      "title": "Nessuna Vista ancora",
+      "description": "Aggiungi task al tuo progetto e usa le viste per filtrare, ordinare e monitorare i progressi senza sforzo.",
+      "cta_primary": "Aggiungi task"
+    },
+    "drafts": {
+      "title": "Task semi-scritti",
+      "description": "Per provare, inizia ad aggiungere una task e lasciala a metà, oppure crea la tua prima bozza qui sotto. 😉",
+      "cta_primary": "Crea task bozza"
+    },
+    "projects_archived": {
+      "title": "Nessun progetto archiviato",
+      "description": "Sembra che tutti i tuoi progetti siano ancora attivi—ottimo lavoro!"
+    },
+    "analytics_projects": {
+      "title": "Crea progetti per visualizzare qui le metriche del progetto."
+    },
+    "analytics_work_items": {
+      "title": "Crea progetti con task ed esecutori per iniziare a tracciare prestazioni, progressi e impatto del team qui."
+    },
+    "analytics_no_cycle": {
+      "title": "Crea cicli per organizzare il lavoro in fasi temporali e tracciare i progressi attraverso gli sprint."
+    },
+    "analytics_no_module": {
+      "title": "Crea sezioni per organizzare il tuo lavoro e tracciare i progressi attraverso diverse fasi."
+    },
+    "analytics_no_intake": {
+      "title": "Imposta intake per gestire le richieste in arrivo e tracciare come vengono accettate e rifiutate"
+    },
+    "home_widget_stickies": {
+      "title": "Annota un'idea, cattura un'illuminazione o registra un'intuizione. Aggiungi un adesivo per iniziare."
+    },
+    "stickies": {
+      "title": "Cattura idee istantaneamente",
+      "description": "Crea adesivi per note rapide e promemoria, e portali con te ovunque tu vada.",
+      "cta_primary": "Crea primo adesivo",
+      "cta_secondary": "Documentazione"
+    },
+    "active_cycles": {
+      "title": "Nessun ciclo attivo",
+      "description": "Al momento non hai cicli in corso. I cicli attivi appaiono qui quando includono la data odierna."
+    },
+    "dashboard": {
+      "title": "Visualizza i tuoi progressi con le dashboard",
+      "description": "Crea dashboard personalizzabili per tracciare metriche, misurare risultati e presentare intuizioni in modo efficace.",
+      "cta_primary": "Crea nuova dashboard"
+    },
+    "wiki": {
+      "title": "Scrivi una nota, un documento o un'intera base di conoscenza.",
+      "description": "Le pagine sono spazi per catturare pensieri in Atlante. Prendi note di riunioni, formattale facilmente, incorpora task, organizzali usando una libreria di componenti e mantienili tutti nel contesto del tuo progetto.",
+      "cta_primary": "Crea la tua pagina"
+    },
+    "project_overview_state_sidebar": {
+      "title": "Abilita stati del progetto",
+      "description": "Abilita le fasi del progetto per visualizzare e gestire proprietà come stato, urgenza, date di scadenza e altro."
+    }
+  },
+  "settings_empty_state": {
+    "estimates": {
+      "title": "Nessuna stima ancora",
+      "description": "Definisci come il tuo team misura lo sforzo e traccialo in modo coerente su tutte le task.",
+      "cta_primary": "Aggiungi sistema di stima"
+    },
+    "labels": {
+      "title": "Nessuna etichetta ancora",
+      "description": "Crea etichette personalizzate per categorizzare e gestire efficacemente le tue task.",
+      "cta_primary": "Crea la tua prima etichetta"
+    },
+    "exports": {
+      "title": "Nessuna esportazione ancora",
+      "description": "Al momento non hai record di esportazione. Una volta esportati i dati, tutti i record appariranno qui."
+    },
+    "tokens": {
+      "title": "Nessun token personale ancora",
+      "description": "Genera token API sicuri per connettere il tuo workspace con sistemi e applicazioni esterne.",
+      "cta_primary": "Aggiungi token API"
+    },
+    "workspace_tokens": {
+      "title": "Nessun token API ancora",
+      "description": "Genera token API sicuri per connettere il tuo workspace con sistemi e applicazioni esterne.",
+      "cta_primary": "Aggiungi token API"
+    },
+    "webhooks": {
+      "title": "Nessun Webhook aggiunto ancora",
+      "description": "Automatizza le notifiche a servizi esterni quando si verificano eventi del progetto.",
+      "cta_primary": "Aggiungi webhook"
+    },
+    "work_item_types": {
+      "title": "Crea e personalizza tipi di task",
+      "description": "Definisci tipi di task unici per il tuo progetto. Ogni tipo può avere le proprie proprietà, flussi di lavoro e campi - personalizzati per le esigenze del tuo progetto e team.",
+      "cta_primary": "Abilita"
+    },
+    "work_item_type_properties": {
+      "title": "Definisci la proprietà e i dettagli che vuoi catturare per questo tipo di task. Personalizzalo per adattarlo al flusso di lavoro del tuo progetto.",
+      "cta_secondary": "Aggiungi proprietà"
+    },
+    "templates": {
+      "title": "Nessun modello ancora",
+      "description": "Riduci i tempi di configurazione creando modelli per task e pagine — e inizia nuovi lavori in pochi secondi.",
+      "cta_primary": "Crea il tuo primo modello"
+    },
+    "recurring_work_items": {
+      "title": "Nessuna task ricorrente ancora",
+      "description": "Configura task ricorrenti per automatizzare attività ripetute e rispettare facilmente la pianificazione.",
+      "cta_primary": "Crea task ricorrente"
+    },
+    "worklogs": {
+      "title": "Traccia i fogli ore per tutti i membri",
+      "description": "Registra il tempo sulle task per visualizzare fogli ore dettagliati per qualsiasi membro del team attraverso i progetti."
+    },
+    "group_syncing": {
+      "title": "Nessuna mappatura di gruppi ancora"
+    },
+    "template_setting": {
+      "title": "Nessun modello ancora",
+      "description": "Riduci i tempi di configurazione creando modelli per progetti, task e pagine — e inizia nuovi lavori in pochi secondi.",
+      "cta_primary": "Crea modello"
+    },
+    "workflows": {
+      "title": "Nessun flusso di lavoro ancora",
+      "description": "Crea flussi di lavoro per gestire lo stato di avanzamento delle tue task.",
+      "cta_primary": "Aggiungi nuovo flusso di lavoro",
+      "states": {
+        "title": "Aggiungi fasi",
+        "description": "Seleziona le fasi attraverso le quali avanza la task."
+      }
+    }
+  }
+}

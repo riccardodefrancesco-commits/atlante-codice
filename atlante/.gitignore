@@ -1,0 +1,4 @@
+# Impostazioni e credenziali di prova di questo Mac: mai nel repository
+locale/
+server/.env
+server/*.env
